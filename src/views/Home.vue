@@ -1,13 +1,28 @@
 <template>
   <div class="home">
-    report
+    <top-view/>
+    <sales-view/>
+    <map-view/>
+    <bottom-view/>
   </div>
 </template>
-
+<!--引入自定义组件-->
 <script>
 
+  import TopView from '../components/TopView'
+  import SalesView from '../components/SalesView'
+  import MapView from '../components/MapView'
+  import BottomView from '../components/BottomView'
+
   export default {
-    name: 'Home'
+    name: 'Home',
+
+    components: {
+      TopView,
+      SalesView,
+      MapView,
+      BottomView
+    }
   }
 </script>
 
