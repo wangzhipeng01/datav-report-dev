@@ -5,7 +5,7 @@ import './plugins/element.js'
 // eslint-disable-next-line no-unused-vars
 import ECharts from 'echarts'
 
-Vue.prototype.$echarts = 'ECharts'
+Vue.prototype.$echarts = ECharts
 Vue.config.productionTip = false
 
 new Vue({
